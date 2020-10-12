@@ -2,7 +2,7 @@ package modulo_pagamento_boleto;
 
 public class Boleto {
 	
-    private String codigo = null;
+    private String codigo = "1234567";
     private String data = null;
     private double valor = 0.00;
 	

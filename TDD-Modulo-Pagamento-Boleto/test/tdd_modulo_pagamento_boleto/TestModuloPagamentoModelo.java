@@ -28,6 +28,7 @@ public class TestModuloPagamentoModelo {
 		
 		Fatura ft = new Fatura();
 	    Assertions.assertTrue(!ft.getNome().equals(null));
-	    
+	    Assertions.assertTrue(!ft.getData().equals(null));
+	  
 	}
 }

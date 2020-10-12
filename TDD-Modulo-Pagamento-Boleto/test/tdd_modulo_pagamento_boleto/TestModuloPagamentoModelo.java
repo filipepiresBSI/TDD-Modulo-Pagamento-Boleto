@@ -30,6 +30,8 @@ public class TestModuloPagamentoModelo {
 		ft.setNome("Sicrano de Beltrano");
 	    Assertions.assertTrue(!ft.getNome().equals(null));
 	    Assertions.assertTrue(!ft.getData().equals(null));
+	    ft.setValor(150.00);
 	    Assertions.assertTrue(ft.getValor() > 0.00);
+	    
 	}
 }

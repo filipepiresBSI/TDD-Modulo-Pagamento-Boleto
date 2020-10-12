@@ -18,8 +18,6 @@ public class Fatura {
 		this.nome = nome;
 	}
 
-
-
 	public String getData() {
 		return data;
 	}

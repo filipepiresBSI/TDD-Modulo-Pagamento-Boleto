@@ -8,7 +8,7 @@ public class Pagamento {
 	
 	private String tipo = "BOLETO";
     private String data = c.get(Calendar.DAY_OF_MONTH) + "/" + c.get(Calendar.MONTH) + "/" + c.get(Calendar.YEAR);
-    private double valor = 0.00;
+    private double valor = 1000.00;
 	
     public String getTipo() {
 		return tipo;

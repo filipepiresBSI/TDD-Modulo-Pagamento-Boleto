@@ -12,13 +12,18 @@ public class Boleto {
 	
     private String codigo = code.toString();
     private String data = c.get(Calendar.DAY_OF_MONTH) + "/" + c.get(Calendar.MONTH) + "/" + c.get(Calendar.YEAR);
-    private double valor = 10.00;
+    private double valor;
     
     public double getValor() {
 		return valor;
 	}
+    
+    public void setValor(double valor) {
+		this.valor = valor;
+	}
 
-    public String getCodigo() {
+
+	public String getCodigo() {
 		return codigo;
 	}
 	

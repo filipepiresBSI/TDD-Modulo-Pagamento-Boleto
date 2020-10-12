@@ -15,7 +15,9 @@ public class TestModuloPagamentoModelo {
 		Boleto bl = new Boleto();
 	    Assertions.assertTrue(!bl.getCodigo().equals(null));
 	    Assertions.assertTrue(!bl.getData().equals(null));
+	    bl.setValor(50.00);
 	    Assertions.assertTrue(bl.getValor() > 0.00);
+	    
 	}
 
 }

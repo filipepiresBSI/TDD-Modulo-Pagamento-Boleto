@@ -1,9 +1,13 @@
 package modulo_pagamento_boleto;
 
+import java.util.Calendar;
+
 public class Pagamento {
 	
+	private Calendar c = Calendar.getInstance();
+	
 	private String tipo = "BOLETO";
-    private String data = null;
+    private String data = c.get(Calendar.DAY_OF_MONTH) + "/" + c.get(Calendar.MONTH) + "/" + c.get(Calendar.YEAR);
     private double valor = 0.00;
 	
     public String getTipo() {

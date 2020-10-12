@@ -27,6 +27,7 @@ public class TestModuloPagamentoModelo {
 	public void testeCriacaoFatura() {
 		
 		Fatura ft = new Fatura();
+		ft.setNome("Sicrano de Beltrano");
 	    Assertions.assertTrue(!ft.getNome().equals(null));
 	    Assertions.assertTrue(!ft.getData().equals(null));
 	  

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import modulo_pagamento_boleto.Boleto;
+import modulo_pagamento_boleto.Fatura;
 
 @DisplayName("Classe para teste do Modulo de Pagamento de Boleto")
 public class TestModuloPagamentoModelo {
@@ -12,6 +13,7 @@ public class TestModuloPagamentoModelo {
 	@DisplayName("Testa a criacao de um boleto")
 	@Test
 	public void testeCriacaoBoletos() {
+		
 		Boleto bl = new Boleto();
 	    Assertions.assertTrue(!bl.getCodigo().equals(null));
 	    Assertions.assertTrue(!bl.getData().equals(null));
@@ -19,5 +21,13 @@ public class TestModuloPagamentoModelo {
 	    Assertions.assertTrue(bl.getValor() > 0.00);
 	    
 	}
-
+    
+	@DisplayName("Testa a criacao de uma fatura")
+	@Test
+	public void testeCriacaoFatura() {
+		
+		Fatura ft = new Fatura();
+	    Assertions.assertTrue(!ft.getNome().equals(null));
+	    
+	}
 }

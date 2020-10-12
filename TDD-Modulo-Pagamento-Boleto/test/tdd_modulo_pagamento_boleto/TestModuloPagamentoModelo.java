@@ -43,7 +43,7 @@ public class TestModuloPagamentoModelo {
 		Pagamento pg = new Pagamento();
 	    Assertions.assertTrue(!pg.getTipo().equals(null));
 	    Assertions.assertTrue(!pg.getData().equals(null));
-	    
+	    Assertions.assertTrue(pg.getValor() > 0);
 	}
 	
 }

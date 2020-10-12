@@ -11,7 +11,7 @@ public class Boleto {
 	private Calendar c = Calendar.getInstance();
 	
     private String codigo = code.toString();
-    private String data = "12/10/2020";
+    private String data = c.get(Calendar.DAY_OF_MONTH) + "/" + c.get(Calendar.MONTH) + "/" + c.get(Calendar.YEAR);
     private double valor = 0.00;
     
     public double getValor() {

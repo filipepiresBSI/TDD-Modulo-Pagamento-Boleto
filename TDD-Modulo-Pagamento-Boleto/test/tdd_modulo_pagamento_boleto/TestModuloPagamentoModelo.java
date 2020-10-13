@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import modulo_pagamento_boleto.Boleto;
 import modulo_pagamento_boleto.Fatura;
 import modulo_pagamento_boleto.Pagamento;
+import modulo_pagamento_boleto.ProcessadorBoletos;
 
 @DisplayName("Classe para teste do Modulo de Pagamento de Boleto")
 public class TestModuloPagamentoModelo {
@@ -46,6 +47,18 @@ public class TestModuloPagamentoModelo {
 	    pg.setValor(1500.00);
 	    Assertions.assertTrue(pg.getValor() > 0);
 	    
+	}
+	
+	@DisplayName("Testa o processador de boletos")
+	@Test
+	public void testeAdicionaBoletos() {
+		
+		ProcessadorBoletos pb = new ProcessadorBoletos();
+		Boleto bl = new Boleto();
+		bl.setValor(55.00);
+		pb.adicionaBoletos(bl);
+		Assertions.assertTrue(pb.quantidadeBoletos() > 0);
+		
 	}
 	
 }

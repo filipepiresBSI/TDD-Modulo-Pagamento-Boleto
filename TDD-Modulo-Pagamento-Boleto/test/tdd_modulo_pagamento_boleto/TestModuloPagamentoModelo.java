@@ -110,5 +110,30 @@ public class TestModuloPagamentoModelo {
 		Assertions.assertEquals("FATURA PAGA", pb.getSituacao());
 	
 	}
-}
+	
+	@Test
+	public void testePagamentoFaturaNaoPaga() {
+		
+		ProcessadorBoletos pb = new ProcessadorBoletos();
+		
+		Boleto b1 = new Boleto();
+		b1.setValor(500.00);
+		Boleto b2 = new Boleto();
+		b2.setValor(500.00);
+		Boleto b3 = new Boleto();
+		b3.setValor(400.00);
+		
+		pb.adicionaBoletos(b1);
+		pb.adicionaBoletos(b2);
+		pb.adicionaBoletos(b3);
+		
+		Fatura ft = new Fatura();
+		ft.setValor(2000.00);
+		
+		pb.pagamentoFatura(ft);
+		
+		Assertions.assertEquals("FATURA NAO PAGA", pb.getSituacao());
+	
+	}
 
+}

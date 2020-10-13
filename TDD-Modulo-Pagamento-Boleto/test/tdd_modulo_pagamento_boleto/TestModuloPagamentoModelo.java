@@ -61,6 +61,7 @@ public class TestModuloPagamentoModelo {
 		
 	}
 	
+	@DisplayName("Soma de Boletos igual a Fatura")
 	@Test
 	public void testePagamentoFaturaPagaIgual() {
 		
@@ -86,6 +87,7 @@ public class TestModuloPagamentoModelo {
 	
 	}
 	
+	@DisplayName("Soma de Boletos maior que a Fatura")
 	@Test
 	public void testePagamentoFaturaPagaMaior() {
 		
@@ -111,6 +113,7 @@ public class TestModuloPagamentoModelo {
 	
 	}
 	
+	@DisplayName("Soma de Boletos menor que a Fatura")
 	@Test
 	public void testePagamentoFaturaNaoPaga() {
 		

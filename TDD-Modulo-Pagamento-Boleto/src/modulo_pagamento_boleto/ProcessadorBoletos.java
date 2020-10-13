@@ -42,6 +42,5 @@ public class ProcessadorBoletos {
 		
 		return pagamentos;
 	}
-	
-	
+		
 }

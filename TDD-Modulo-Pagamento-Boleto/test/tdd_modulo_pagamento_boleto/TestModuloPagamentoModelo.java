@@ -80,6 +80,7 @@ public class TestModuloPagamentoModelo {
 		
 		Fatura ft = new Fatura();
 		ft.setValor(1500.00);
+		ft.setNome("Fulano da Silva");
 		
 		pb.pagamentoFatura(ft);
 		
@@ -106,6 +107,7 @@ public class TestModuloPagamentoModelo {
 		
 		Fatura ft = new Fatura();
 		ft.setValor(1500.00);
+		ft.setNome("Sicrano dos Santos");
 		
 		pb.pagamentoFatura(ft);
 		
@@ -132,6 +134,7 @@ public class TestModuloPagamentoModelo {
 		
 		Fatura ft = new Fatura();
 		ft.setValor(2000.00);
+		ft.setNome("Beltrano de Moraes");
 		
 		pb.pagamentoFatura(ft);
 		

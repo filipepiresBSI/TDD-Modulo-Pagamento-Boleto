@@ -8,7 +8,7 @@ public class Fatura {
 	
 	private String nome;
     private String data = c.get(Calendar.DAY_OF_MONTH) + "/" + c.get(Calendar.MONTH) + "/" + c.get(Calendar.YEAR);
-    private double valor = 100.00;
+    private double valor;
 	
     public String getNome() {
 		return nome;
